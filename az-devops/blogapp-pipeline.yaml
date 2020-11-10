@@ -81,7 +81,7 @@ stages:
 
   - stage: DeployProdAU
     dependsOn:
-    - DeployProdAUAccount
+    - Build
     jobs:
     - deployment: DeployProdAU
       displayName: Deploy ProdAU
